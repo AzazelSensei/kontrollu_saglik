@@ -2,7 +2,7 @@
 <br>
 Takım Cuddly (4. numara)
 
-![logo 1](https://raw.githubusercontent.com/AzazelSensei/kontrollu_saglik/main/ProjectManagement/SprintDocuments/cuddly.jpg)
+![logo 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/cuddly.jpg)
 
 
 # Ürün İle İlgili Bilgiler
@@ -64,21 +64,21 @@ Takım Cuddly (4. numara)
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken kırmızı başlıklar yapılacak işleri (task) gösterirken, mavi başlıklar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap ve Google Meet üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap ve Google Meet üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/DailyScrumMeetingNotesSprint1%20(4).docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/backlog-1.png)
-![Backlog 2](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/backlog-2.png)
-![Backlog 3](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/backlog-3.png)
+![Backlog 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/backlog-1.png)
+![Backlog 2](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/backlog-2.png)
+![Backlog 3](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/backlog-3.png)
 
 
 
 - **Ürün Durumu**: Ekran görüntüleri: <br>
-![Screenshot 1](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/KontrollüSağlık-1.jpg) 
-![Screenshot 2](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/KontrollüSağlık-2.jpg) 
-![Screenshot 3](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/KontrollüSağlık-3.jpg) 
-![Screenshot 4](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/KontrollüSağlık-4.jpg) 
-![Screenshot 5](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/KontrollüSağlık-5.jpg) 
+![Screenshot 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/Kontroll%C3%BCSa%C4%9Fl%C4%B1k-1.jpg)
+![Screenshot 2](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/Kontroll%C3%BCSa%C4%9Fl%C4%B1k-2.jpg)
+![Screenshot 3](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/Kontroll%C3%BCSa%C4%9Fl%C4%B1k-3.jpg)
+![Screenshot 4](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/Kontroll%C3%BCSa%C4%9Fl%C4%B1k-4.jpg)
+![Screenshot 5](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/Kontroll%C3%BCSa%C4%9Fl%C4%B1k-5.jpg)
   
 
 - **Sprint Review**: 
@@ -106,22 +106,22 @@ Alınan kararlar: Uygulama kodlaması kısmında hızlanılması gerekli görül
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken kırmızı başlıklar yapılacak işleri (task) gösterirken, mavi başlıklar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint-2.docx)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/DailyScrumMeetingNotesSprint-2%20(1).docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/1-trello-2.sprint.png)
-![Backlog 2](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/2-trello-2.sprint.png)
-![Backlog 3](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/3-trello-2.sprint.png)
+![Backlog 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/1-trello-2.sprint.png)
+![Backlog 2](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/2-trello-2.sprint.png)
+![Backlog 3](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3-trello-2.sprint.png)
 
 - **Ürün Durumu**: Ekran görüntüleri: <br>
-![Screenshot 1 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/1-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 2 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/2-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 3 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/3-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 4 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/4-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 5 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/5-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 6 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/6-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 7 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/7-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
-![Screenshot 8 ](https://github.com/berkaycatak/cuddly/blob/main/ProjectManagement/Sprint1Documents/8-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 1 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/1-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 2 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/2-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 3 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 4 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/4-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 5 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/5-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 6 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/6-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 7 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/7-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
+![Screenshot 8 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/8-2.Sprint-Kontroll%C3%BC_Sa%C4%9Fl%C4%B1k.png)
 
 - **Sprint Review**: 
 Alınan kararlar: Kodlama yapılırken ürünün başına dönüp ara verilmesi istenilmediğinden kodlama son sprinte bırakılmıştır. Uygulama üzerindeki fikirler ve kaynakların tam olarak oturulması için tartışılmıştır. UI designın son halini alabilmesi için gerekli zaman verilip üzerinde konuşulması uygun görülmüştür. Bir sağlık uygulamasının güvenilir olması gerektiğine karar verildiğinden tüm kaynakların güvenilir olması gerektiği tartışılmış buna uygun olarak kaynak toplanması yapılmıştır ve de 3. sprintte de kaynak toplamının devam edilmesi uygun görülmüştür.
