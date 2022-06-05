@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kontrollu_saglik/bloc/login_cubit/login_cubit.dart';
+import 'package:kontrollu_saglik/utils/toast.dart';
 
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -64,160 +65,155 @@ class _IntroState extends State<Intro> {
               ),
 
               //Panel code
-              Container(
-                  height: 675,
-                  //panel Background
-                  decoration: BoxDecoration(
-                    color: Colors.black.withAlpha(235),
-                    borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(40.0),
-                        topLeft: Radius.circular(40.0)),
-                  ),
+              BlocConsumer<LoginCubit, LoginState>(
+                listener: (context, state) {
+                  if (state is LoginLoaded) {
+                    Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      '/home',
+                      (_) => false,
+                    );
 
-                  //Main Layout Column
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //Login In Forum
-                      Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 30,
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: 50,
-                            ),
+                    toastMessage(
+                      mess:
+                          'Sayın ${state.user.name} ${state.user.surName} Hoş Geldiniz :)',
+                      toastType: ToastType.success,
+                    );
+                  } else if (state is LoginError) {
+                    toastMessage(
+                      mess: 'Error: ${state.errorMessage}',
+                      toastType: ToastType.error,
+                    );
+                  }
+                },
+                builder: (context, state) {
+                  return Container(
+                      height: 675,
+                      //panel Background
+                      decoration: BoxDecoration(
+                        color: Colors.black.withAlpha(235),
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(40.0),
+                            topLeft: Radius.circular(40.0)),
+                      ),
 
-                            Text(
-                              "Giriş Yap",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 30),
-                            ),
+                      //Main Layout Column
+                      child: (state is LoginLoading)
+                          ? Center(child: CircularProgressIndicator())
+                          : Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30,
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(
+                                        height: 50,
+                                      ),
 
-                            SizedBox(
-                              height: 5,
-                            ),
+                                      Text(
+                                        "Giriş Yap",
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 30),
+                                      ),
 
-                            Text(
-                              "Kullanıcı Adı veya Mail Adresiniz ile Giriş yapabilirsiniz. - admin/123456",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w300,
-                                fontSize: 17,
-                              ),
-                            ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
 
-                            SizedBox(
-                              height: 40,
-                            ),
+                                      Text(
+                                        "Kullanıcı Adı veya Mail Adresiniz ile Giriş yapabilirsiniz. - admin/123456",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w300,
+                                          fontSize: 17,
+                                        ),
+                                      ),
 
-                            //field
-                            Text(
-                              "Kullanıcı Adı",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.left,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            TextField(
-                              controller: _controller,
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                              decoration: InputDecoration(
-                                  filled: true,
-                                  fillColor: Color.fromARGB(255, 30, 26, 26),
-                                  hintText: " "),
-                            ),
+                                      SizedBox(
+                                        height: 40,
+                                      ),
 
-                            SizedBox(
-                              height: 50,
-                            ),
+                                      //field
+                                      Text(
+                                        "Kullanıcı Adı",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 19,
+                                            fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      TextField(
+                                        controller: _controller,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                        decoration: InputDecoration(
+                                            filled: true,
+                                            fillColor:
+                                                Color.fromARGB(255, 30, 26, 26),
+                                            hintText: " "),
+                                      ),
 
-                            //Password
-                            Text(
-                              "Şifre",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.left,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            TextField(
-                              controller: _controller2,
-                              obscureText: true,
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                              decoration: InputDecoration(
-                                  filled: true,
-                                  fillColor: Color.fromARGB(255, 30, 26, 26),
-                                  hintText: ""),
-                            ),
-                            Divider(
-                              height: 15,
-                            ),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                "Şifremi Unuttum?",
-                                style: TextStyle(
-                                  color: Colors.white,
+                                      SizedBox(
+                                        height: 50,
+                                      ),
+
+                                      //Password
+                                      Text(
+                                        "Şifre",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 19,
+                                            fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.left,
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      TextField(
+                                        controller: _controller2,
+                                        obscureText: true,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                        decoration: InputDecoration(
+                                            filled: true,
+                                            fillColor:
+                                                Color.fromARGB(255, 30, 26, 26),
+                                            hintText: ""),
+                                      ),
+                                      Divider(
+                                        height: 15,
+                                      ),
+                                      TextButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          "Şifremi Unuttum?",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                          textAlign: TextAlign.left,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: buildColumn(),
-                      ),
-
-                      //Login Button
-                      // Column(
-                      //   children: [
-                      //     TextButton(
-                      //       onPressed: () {},
-                      //       child: Text(
-                      //         "Hesabım Yok. Hesap Oluştur!",
-                      //         style: TextStyle(
-                      //             color: Color.fromRGBO(255, 255, 255, .5)),
-                      //         textAlign: TextAlign.left,
-                      //       ),
-                      //     ),
-                      //     GFButton(
-                      //       onPressed: () {
-                      //         context.read<LoginCubit>().login(
-                      //             username: _controller.text,
-                      //             password: _controller2.text);
-                      //       },
-                      //       text: "Giriş Yap",
-                      //       textStyle: TextStyle(
-                      //           color: Color.fromRGBO(240, 255, 255, 100),
-                      //           fontSize: 22,
-                      //           letterSpacing: 2,
-                      //           fontWeight: FontWeight.bold),
-                      //       size: 65,
-                      //       fullWidthButton: true,
-                      //       color: Color.fromRGBO(255, 124, 23, 1),
-                      //       // padding: EdgeInsets.symmetric(vertical: 10),
-                      //     ),
-                      //     buildColumn(),
-                      //   ],
-                      // )
-                    ],
-                  )),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: loginButton(context),
+                                ),
+                              ],
+                            ));
+                },
+              ),
             ],
           ),
           boxShadow: [
@@ -253,61 +249,6 @@ class _IntroState extends State<Intro> {
         size: 65,
         fullWidthButton: true,
         color: Color.fromRGBO(255, 124, 23, 1));
-  }
-
-  Widget buildColumn() {
-    return BlocBuilder<LoginCubit, LoginState>(
-      builder: (context, state) {
-        if (state is LoginLoading) {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        } else {
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              if (state is LoginLoaded)
-                Column(
-                  children: [
-                    Center(
-                      child: Text(
-                        'Kullanıcı: ${state.user.name} ${state.user.surName}',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
-                      ),
-                    ),
-                    ElevatedButton(
-                        onPressed: (() =>
-                            Navigator.pushNamed(context, '/home')),
-                        child: Text("Yönlendir"))
-                  ],
-                ),
-              if (state is LoginError)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                  child: Center(
-                      child: Text(
-                    'error: ${state.errorMessage}',
-                    style: TextStyle(color: Colors.red, fontSize: 30),
-                  )),
-                ),
-              SizedBox(
-                height: 20,
-                width: 20,
-              ),
-              // TextField(
-              //   controller: _controller,
-              //   decoration: const InputDecoration(hintText: 'username'),
-              // ),
-              // TextField(
-              //   controller: _controller2,
-              //   decoration: const InputDecoration(hintText: 'password'),
-              // ),
-              loginButton(context),
-            ],
-          );
-        }
-      },
-    );
   }
 }
 
