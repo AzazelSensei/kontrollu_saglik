@@ -2,7 +2,7 @@
 <br>
 Takım Cuddly (4. numara)
 
-![logo 1](https://raw.githubusercontent.com/berkaycatak/cuddly/main/ProjectManagement/Sprint1Documents/cuddly.jpg)
+![logo 1](https://raw.githubusercontent.com/AzazelSensei/kontrollu_saglik/main/ProjectManagement/SprintDocuments/cuddly.jpg)
 
 
 # Ürün İle İlgili Bilgiler
