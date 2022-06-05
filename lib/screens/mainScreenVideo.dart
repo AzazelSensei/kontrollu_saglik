@@ -21,6 +21,7 @@ class MainVideoScreen extends StatefulWidget {
 }
 
 class _MainVideoScreenState extends State<MainVideoScreen> {
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   // Color primaryColor = Color.fromARGB(255, 255, 124, 23);
   Color primaryColor = Colors.black;
 
@@ -46,9 +47,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
     // ignore: unused_local_variable
     var containerSize = MediaQuery.of(context).size.width / 3;
 
-    //This is a list that generates all the content below the logo
     List<Widget> customList = [
-      //User Profile Section
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 18),
         child: Row(
@@ -78,12 +77,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                 ),
               ],
             ),
-            // GFAvatar(
-            //   size: 5.h,
-            //   // backgroundImage: NetworkImage(
-            //   //     "https://images.unsplash.com/photo-1650765815206-2884e7d"
-            //   //     "31cab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"),
-            // ),
           ],
         ),
       ),
@@ -92,7 +85,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
         height: 5.h,
       ),
 
-      //Explore Services Section Horizontal Section
       Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -103,18 +95,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  // Text(
-                  //   'Our',
-                  //   style: GoogleFonts.inter(
-                  //     // fontStyle: FontStyle.italic,
-                  //     fontWeight: FontWeight.w200,
-                  //     fontSize: 18.sp,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-                  // SizedBox(
-                  //   width: 1.w,
-
                   Text(
                     'Kategoriler',
                     style: GoogleFonts.roboto(
@@ -598,7 +578,8 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
               onTap: () {
                 Navigator.pushNamed(context, "/pro");
               },
-            )
+            ),
+            SizedBox(height: 100)
           ],
         ),
       ),
@@ -606,6 +587,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
     //End of Content List
 
     return Scaffold(
+      key: scaffoldKey,
       backgroundColor: Color.fromARGB(255, 228, 227, 227),
       drawer: NowDrawer(currentPage: "Home"),
       body: Stack(
@@ -627,39 +609,43 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        flex: 1,
-                        child: IconButton(
-                          onPressed: () {},
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          onPressed: () =>
+                              scaffoldKey.currentState.openDrawer(),
                           icon: Icon(Icons.menu),
                           iconSize: 3.4.h,
                         ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 4.h, bottom: 3.h),
-                        child: Image.asset(
-                          'assets/imgs/logo.png',
-                          width: 15.w,
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 4.h, bottom: 3.h),
+                            child: Image.asset(
+                              'assets/imgs/logo.png',
+                              width: 15.w,
+                              height: 7.h,
+                            ),
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: IconButton(
+                        IconButton(
                           onPressed: () {
                             Navigator.pushNamed(context, "/settings");
                           },
                           icon: Icon(Icons.settings),
                           iconSize: 3.4.h,
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Expanded(
-                    child: Column(
-                      children: customList,
+                    child: SingleChildScrollView(
+                      physics: BouncingScrollPhysics(),
+                      child: Column(
+                        children: customList,
+                      ),
                     ),
                   ),
                   Container(
@@ -691,11 +677,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                           ],
                         ),
                         onTap: () {
-                          Navigator.pop(context);
+                          Navigator.pushNamedAndRemoveUntil(
+                            context,
+                            '/intro',
+                            (_) => false,
+                          );
                         },
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

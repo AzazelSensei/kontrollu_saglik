@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         initialRoute: "/intro",
         routes: <String, WidgetBuilder>{
           '/settings': (BuildContext context) => new Settings(),
-          "/intro": (BuildContext context) => new Intro(),
+          "/intro": (BuildContext context) => new Intro(), // giriş şifre ne ve username
           //"/apitest": (BuildContext context) => new ApiTest(),
           //"/hometest": (BuildContext context) => new MainScreen(),
           "/pro": (BuildContext context) => new Pro(),
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
           "/components": (BuildContext context) => new Components(),
           "/account": (BuildContext context) => new Register(),
           "/services": (BuildContext context) => new Services(),
-          "/home": (BuildContext context) => new MainVideoScreen(),
+          "/home": (BuildContext context) => new MainVideoScreen(), // ana sayfa :*
           "/photos": (BuildContext context) => new PhotographyScreen(),
           "/videos": (BuildContext context) => new VideoraphyScreen(),
           "/web": (BuildContext context) => new ServiceWidget(
