@@ -9,27 +9,28 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  animated_text_kit: ^4.2.1
+  carousel_slider: ^2.2.1
+  cupertino_icons: ^1.0.0
+  dio: ^4.0.6
   flutter:
     sdk: flutter
-  scrollable_positioned_list: ^0.1.7
-  carousel_slider: ^2.2.1
-  url_launcher: ^5.5.2
-  font_awesome_flutter: ^8.8.1
-  sliding_up_panel: ^2.0.0+1
-  responsive_sizer: ^3.0.5+1
-  animated_text_kit: ^4.2.1
+  flutter_bloc: ^8.0.1
   flutter_form_builder: ^7.1.1
+  font_awesome_flutter: ^8.8.1
   getwidget: ^2.0.5
-  onboarding: ^3.1.0
-  lottie: ^1.2.2
-  rive: ^0.8.4
-  google_fonts: ^2.3.2
-  shimmer_animation: ^2.1.0
-  video_player: ^2.2.19
   glass: ^1.0.1+1
+  google_fonts: ^2.3.2
+  lottie: ^1.2.2
+  onboarding: ^3.1.0
+  responsive_sizer: ^3.0.5+1
+  rive: ^0.8.4
+  scrollable_positioned_list: ^0.1.7
+  shimmer_animation: ^2.1.0
   sizer: ^2.0.15
-
-  cupertino_icons: ^1.0.0
+  sliding_up_panel: ^2.0.0+1
+  url_launcher: ^5.5.2
+  video_player: ^2.2.19
 
 dev_dependencies:
   flutter_test:
@@ -57,13 +58,11 @@ flutter:
   #    - assets/imgs/onboarding-free.png
   #    - assets/imgs/invision-white-slim.png
   #    - assets/imgs
-
   fonts:
     - family: Montserrat
       fonts:
         - asset: assets/fonts/Montserrat-Regular.ttf
         - asset: assets/fonts/Montserrat-Bold.ttf
           weight: 600
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

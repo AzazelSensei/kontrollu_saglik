@@ -97,15 +97,15 @@ class NowDrawer extends StatelessWidget {
               //     iconColor: UIColors.warning,
               //     title: "Profil",
               //     isSelected: currentPage == "Profile" ? true : false),
-              // DrawerTile(
-              //     icon: FontAwesomeIcons.fileInvoice,
-              //     onTap: () {
-              //       if (currentPage != "Account")
-              //         Navigator.pushReplacementNamed(context, '/account');
-              //     },
-              //     iconColor: UIColors.info,
-              //     title: "Hesap",
-              //     isSelected: currentPage == "Account" ? true : false),
+              DrawerTile(
+                  icon: FontAwesomeIcons.fileInvoice,
+                  onTap: () {
+                    if (currentPage != "Account")
+                      Navigator.pushReplacementNamed(context, '/account');
+                  },
+                  iconColor: UIColors.info,
+                  title: "Hesap",
+                  isSelected: currentPage == "Account" ? true : false),
               DrawerTile(
                   icon: FontAwesomeIcons.cog,
                   onTap: () {

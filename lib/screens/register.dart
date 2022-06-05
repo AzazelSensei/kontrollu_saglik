@@ -23,7 +23,7 @@ class _RegisterState extends State<Register> {
     return Scaffold(
         appBar: Navbar(
           transparent: true,
-          title: "",
+          title: "Hesap Oluştur",
           reverseTextcolor: true,
         ),
         extendBodyBehindAppBar: true,

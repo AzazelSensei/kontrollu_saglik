@@ -6,6 +6,7 @@ import 'package:kontrollu_saglik/screens/inquriry.dart';
 import 'package:kontrollu_saglik/screens/introScreen.dart';
 import 'package:kontrollu_saglik/screens/mainScreen.dart';
 import 'package:kontrollu_saglik/screens/mainScreenVideo.dart';
+import 'package:kontrollu_saglik/screens/newscreen.dart';
 import 'package:kontrollu_saglik/screens/photographyServices.dart';
 import 'package:kontrollu_saglik/screens/pro.dart';
 import 'package:kontrollu_saglik/screens/profile.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         routes: <String, WidgetBuilder>{
           '/settings': (BuildContext context) => new Settings(),
           "/intro": (BuildContext context) => new Intro(),
+          "/apitest": (BuildContext context) => new ApiTest(),
           "/OldHome": (BuildContext context) => new MainScreen(),
           "/pro": (BuildContext context) => new Pro(),
           "/profile": (BuildContext context) => new Profile(),
