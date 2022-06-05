@@ -18,7 +18,7 @@ class _VideoWidgetState extends State<VideoWidget> {
         // VideoPlayerController.network(
         //   'https://assets.mixkit.co/videos/preview/mixkit-bubbles-rising-in-water-178-large.mp4')
 
-        VideoPlayerController.asset('assets/imgs/register-bg.png')
+        VideoPlayerController.asset('assets/imgs/Fbg.png')
           ..initialize().then((_) {
             _controller.setLooping(true);
             _controller.play();

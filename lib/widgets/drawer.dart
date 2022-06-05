@@ -68,15 +68,15 @@ class NowDrawer extends StatelessWidget {
                   iconColor: UIColors.primary,
                   title: "Ana Sayfa",
                   isSelected: currentPage == "Home" ? true : false),
-              DrawerTile(
-                  icon: FontAwesomeIcons.dharmachakra,
-                  onTap: () {
-                    if (currentPage != "Components")
-                      Navigator.pushReplacementNamed(context, '/components');
-                  },
-                  iconColor: UIColors.error,
-                  title: "Detaylar",
-                  isSelected: currentPage == "Components" ? true : false),
+              // DrawerTile(
+              //     icon: FontAwesomeIcons.dharmachakra,
+              //     onTap: () {
+              //       if (currentPage != "Components")
+              //         Navigator.pushReplacementNamed(context, '/components');
+              //     },
+              //     iconColor: UIColors.error,
+              //     title: "Detaylar",
+              //     isSelected: currentPage == "Components" ? true : false),
 
               ///DRAWER DİĞER PLANLANAN BAŞLIKLAR
               // DrawerTile(
@@ -97,15 +97,15 @@ class NowDrawer extends StatelessWidget {
               //     iconColor: UIColors.warning,
               //     title: "Profil",
               //     isSelected: currentPage == "Profile" ? true : false),
-              // DrawerTile(
-              //     icon: FontAwesomeIcons.fileInvoice,
-              //     onTap: () {
-              //       if (currentPage != "Account")
-              //         Navigator.pushReplacementNamed(context, '/account');
-              //     },
-              //     iconColor: UIColors.info,
-              //     title: "Hesap",
-              //     isSelected: currentPage == "Account" ? true : false),
+              DrawerTile(
+                  icon: FontAwesomeIcons.fileInvoice,
+                  onTap: () {
+                    if (currentPage != "Account")
+                      Navigator.pushReplacementNamed(context, '/account');
+                  },
+                  iconColor: UIColors.info,
+                  title: "Hesap",
+                  isSelected: currentPage == "Account" ? true : false),
               DrawerTile(
                   icon: FontAwesomeIcons.cog,
                   onTap: () {

@@ -76,7 +76,7 @@ class _SettingsState extends State<Settings> {
                 TableCellSettings(
                     title: "Bildirim Ayarları",
                     onTap: () {
-                      Navigator.pushNamed(context, '/pro');
+                      Navigator.pushNamed(context, "/pro");
                     }),
                 SizedBox(height: 40.0),
                 Center(

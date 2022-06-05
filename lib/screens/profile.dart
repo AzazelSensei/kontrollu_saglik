@@ -8,12 +8,12 @@ import 'package:kontrollu_saglik/widgets/navbar.dart';
 import 'package:kontrollu_saglik/widgets/photo-album.dart';
 
 List<String> imgArray = [
-  "assets/imgs/album-1.jpg",
-  "assets/imgs/album-2.jpg",
-  "assets/imgs/album-3.jpg",
-  "assets/imgs/album-4.jpg",
-  "assets/imgs/album-5.jpg",
-  "assets/imgs/album-6.jpg"
+  "assets/imgs/stock.png",
+  "assets/imgs/stock.png",
+  "assets/imgs/stock.png",
+  "assets/imgs/stock.png",
+  "assets/imgs/stock.png",
+  "assets/imgs/stock.png"
 ];
 
 class Profile extends StatelessWidget {
@@ -50,7 +50,7 @@ class Profile extends StatelessWidget {
                                 children: [
                                   CircleAvatar(
                                       backgroundImage: AssetImage(
-                                          "assets/imgs/profile-img.jpg"),
+                                          "assets/imgs/stock.png"),
                                       radius: 65.0),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 24.0),

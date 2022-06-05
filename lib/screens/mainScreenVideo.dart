@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kontrollu_saglik/widgets/drawer.dart';
-import 'package:kontrollu_saglik/widgets/navbar.dart';
 import 'package:sizer/sizer.dart';
 
 class Service {
@@ -150,7 +149,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                             width: MediaQuery.of(context).size.width / 2.8,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/imgs/PhotoBack.jpg"),
+                                image: AssetImage("assets/imgs/ilkyardim.png"),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -210,7 +209,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: GestureDetector(
                       onTap: () {
-                        print("We want Videography Services, get me right");
                         Navigator.pushNamed(context, "/videos");
                       },
                       child: Container(
@@ -221,7 +219,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                             decoration: BoxDecoration(
                               color: Colors.black,
                               image: DecorationImage(
-                                image: AssetImage("assets/imgs/Video.png"),
+                                image: AssetImage("assets/imgs/obezite.png"),
                                 fit: BoxFit.cover,
                               ),
                               boxShadow: [
@@ -240,7 +238,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 Padding(
                                   padding: EdgeInsets.only(top: 12),
                                   child: Text(
-                                    'Videography',
+                                    'Obezite',
                                     style: GoogleFonts.roboto(
                                       fontWeight: FontWeight.w800,
                                       fontSize: 15,
@@ -317,7 +315,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/Web.png"),
+                                    image: AssetImage("assets/imgs/travma.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -328,7 +326,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                     Padding(
                                       padding: EdgeInsets.only(top: 12),
                                       child: Text(
-                                        'Web Design',
+                                        'Ruhsal Travma',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -398,7 +396,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image:
-                                        AssetImage("assets/imgs/marketing.png"),
+                                        AssetImage("assets/imgs/diyabet.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -409,7 +407,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                     Padding(
                                       padding: EdgeInsets.only(top: 12),
                                       child: Text(
-                                        'Marketing',
+                                        'Diyabet',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -483,8 +481,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/imgs/Software.png"),
+                                    image: AssetImage("assets/imgs/astim.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -496,7 +493,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                       padding:
                                           EdgeInsets.only(top: 12, left: 16),
                                       child: Text(
-                                        'Software Development',
+                                        'Astım',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -592,13 +589,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/imgs/ClientPortal.png"),
+                      image: AssetImage("assets/imgs/stock.png"),
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, "/pro");
+              },
             )
           ],
         ),
@@ -629,15 +628,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.menu),
-                        iconSize: 3.4.h,
-                      ),
-                      Divider(
-                        height: 3.h,
+                      Expanded(
+                        flex: 1,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.menu),
+                          iconSize: 3.4.h,
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 4.h, bottom: 3.h),
@@ -646,15 +645,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                           width: 15.w,
                         ),
                       ),
-                      Divider(
-                        height: 3.h,
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, "/settings");
-                        },
-                        icon: Icon(Icons.settings),
-                        iconSize: 3.4.h,
+                      Expanded(
+                        flex: 1,
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/settings");
+                          },
+                          icon: Icon(Icons.settings),
+                          iconSize: 3.4.h,
+                        ),
                       ),
                     ],
                   ),
@@ -692,7 +691,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                           ],
                         ),
                         onTap: () {
-                          print('GG');
                           Navigator.pop(context);
                         },
                       ),
