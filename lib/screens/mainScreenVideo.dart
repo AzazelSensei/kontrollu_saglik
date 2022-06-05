@@ -209,7 +209,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: GestureDetector(
                       onTap: () {
-                        print("We want Videography Services, get me right");
                         Navigator.pushNamed(context, "/videos");
                       },
                       child: Container(
@@ -220,7 +219,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                             decoration: BoxDecoration(
                               color: Colors.black,
                               image: DecorationImage(
-                                image: AssetImage("assets/imgs/stock.png"),
+                                image: AssetImage("assets/imgs/obezite.png"),
                                 fit: BoxFit.cover,
                               ),
                               boxShadow: [
@@ -239,7 +238,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 Padding(
                                   padding: EdgeInsets.only(top: 12),
                                   child: Text(
-                                    'Videography',
+                                    'Obezite',
                                     style: GoogleFonts.roboto(
                                       fontWeight: FontWeight.w800,
                                       fontSize: 15,
@@ -316,7 +315,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/stock.png"),
+                                    image: AssetImage("assets/imgs/travma.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -327,7 +326,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                     Padding(
                                       padding: EdgeInsets.only(top: 12),
                                       child: Text(
-                                        'Web Design',
+                                        'Ruhsal Travma',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -396,7 +395,8 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/stock.png"),
+                                    image:
+                                        AssetImage("assets/imgs/diyabet.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -481,7 +481,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/stock.png"),
+                                    image: AssetImage("assets/imgs/astim.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -493,7 +493,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                       padding:
                                           EdgeInsets.only(top: 12, left: 16),
                                       child: Text(
-                                        'Software Development',
+                                        'Astım',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -596,7 +596,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                 ),
               ),
               onTap: () {
-                Navigator.pushNamed(context, "/apitest");
+                Navigator.pushNamed(context, "/pro");
               },
             )
           ],
@@ -691,7 +691,6 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                           ],
                         ),
                         onTap: () {
-                          print('GG');
                           Navigator.pop(context);
                         },
                       ),

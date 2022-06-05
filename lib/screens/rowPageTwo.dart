@@ -47,15 +47,13 @@ class VideoraphyScreen extends StatelessWidget {
                           width: 90.w,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage("assets/imgs/stock.png"),
+                              image: AssetImage("assets/imgs/obezite.png"),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
                       ),
-                      onTap: () {
-                        print('Hello Portal');
-                      },
+                      onTap: () {},
                     ),
                   ),
                 ],
@@ -66,7 +64,7 @@ class VideoraphyScreen extends StatelessWidget {
               height: 3.h,
             ),
             Text(
-              "Videography Services:",
+              "Obezite: ",
               style: GoogleFonts.inter(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.w700,
@@ -77,11 +75,11 @@ class VideoraphyScreen extends StatelessWidget {
               height: 1.h,
             ),
             Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-              'Eget nunc, eu quis nunc non potenti nulla ultricies. '
-              'At sed tincidunt nullam sed massa consectetur arcu libero.',
-              style: GoogleFonts.inter(
-                fontSize: 12.sp,
+              'Obezite günümüzde gelişmiş ve gelişmekte olan '
+              'ülkelerin en önemli sağlık sorunları arasında yer almaktadır.'
+              'bedenin yağ kütlesinin yağsız kütleye oranının aşırı artması sonucu oluşur.',
+              style: GoogleFonts.roboto(
+                fontSize: 10.sp,
                 color: Colors.white,
               ),
             ),
@@ -162,15 +160,15 @@ class VideoraphyScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'Book Appointment',
-                                  style: GoogleFonts.inter(
+                                  'Ana Sayfaya Dön',
+                                  style: GoogleFonts.roboto(
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w700,
                                     color: logoColor,
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 1.w,
+                                  width: 2.w,
                                 ),
                                 Icon(
                                   FontAwesomeIcons.arrowRight,

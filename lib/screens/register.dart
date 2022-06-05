@@ -62,9 +62,9 @@ class _RegisterState extends State<Register> {
                                     padding: const EdgeInsets.only(
                                         top: 24.0, bottom: 8),
                                     child: Center(
-                                        child: Text("Register",
+                                        child: Text("Kayıt Oluştur",
                                             style: TextStyle(
-                                                fontSize: 20,
+                                                fontSize: 25,
                                                 fontWeight: FontWeight.w600))),
                                   ),
                                   Row(
@@ -77,7 +77,7 @@ class _RegisterState extends State<Register> {
                                         elevation: 4.0,
                                         fillColor: UIColors.socialFacebook,
                                         child: Icon(FontAwesomeIcons.facebook,
-                                            size: 16.0, color: Colors.white),
+                                            size: 20.0, color: Colors.white),
                                         padding: EdgeInsets.all(15.0),
                                         shape: CircleBorder(),
                                       ),
@@ -86,7 +86,7 @@ class _RegisterState extends State<Register> {
                                         elevation: 4.0,
                                         fillColor: UIColors.socialTwitter,
                                         child: Icon(FontAwesomeIcons.twitter,
-                                            size: 16.0, color: Colors.white),
+                                            size: 20.0, color: Colors.white),
                                         padding: EdgeInsets.all(15.0),
                                         shape: CircleBorder(),
                                       ),
@@ -95,7 +95,7 @@ class _RegisterState extends State<Register> {
                                         elevation: 4.0,
                                         fillColor: UIColors.socialDribbble,
                                         child: Icon(FontAwesomeIcons.dribbble,
-                                            size: 16.0, color: Colors.white),
+                                            size: 20.0, color: Colors.white),
                                         padding: EdgeInsets.all(15.0),
                                         shape: CircleBorder(),
                                       )
@@ -105,7 +105,7 @@ class _RegisterState extends State<Register> {
                                     padding: const EdgeInsets.only(
                                         top: 24.0, bottom: 24.0),
                                     child: Center(
-                                      child: Text("or be classical",
+                                      child: Text("YA DA",
                                           style: TextStyle(
                                               color: UIColors.time,
                                               fontWeight: FontWeight.w200,
@@ -119,17 +119,17 @@ class _RegisterState extends State<Register> {
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Input(
-                                          placeholder: "First Name...",
+                                          placeholder: "Ad",
                                           prefixIcon:
-                                              Icon(Icons.school, size: 20),
+                                              Icon(Icons.school, size: 25),
                                         ),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Input(
-                                            placeholder: "Last Name...",
+                                            placeholder: "Soyad",
                                             prefixIcon:
-                                                Icon(Icons.email, size: 20)),
+                                                Icon(Icons.email, size: 25)),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
@@ -138,9 +138,9 @@ class _RegisterState extends State<Register> {
                                             right: 8.0,
                                             bottom: 0),
                                         child: Input(
-                                            placeholder: "Your Email...",
+                                            placeholder: "Mail",
                                             prefixIcon:
-                                                Icon(Icons.lock, size: 20)),
+                                                Icon(Icons.lock, size: 25)),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
@@ -157,10 +157,10 @@ class _RegisterState extends State<Register> {
                                                             newValue),
                                                 value: _checkboxValue),
                                             Text(
-                                                "I agree with the terms and conditions",
+                                                "Şartları Okudum Kabul Ediyorum",
                                                 style: TextStyle(
                                                     color: UIColors.black,
-                                                    fontSize: 12,
+                                                    fontSize: 15,
                                                     fontWeight:
                                                         FontWeight.w200)),
                                           ],

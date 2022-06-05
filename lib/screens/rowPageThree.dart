@@ -112,22 +112,22 @@ class ServiceWidget extends StatelessWidget {
     //End of Content List
 
     return Scaffold(
-        backgroundColor: UIColors.bgColorScreen,
-        // drawer: NowDrawer(currentPage: "Articles"),
-        body: Stack(
-          children: [
-            VideoWidget().asGlass(
-              frosted: true,
-              blurX: 50.0,
-              blurY: 50.0,
-            ),
-            Container(
-              color: Color.fromARGB(50, 0, 0, 0),
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-            ).asGlass(tintColor: Colors.black, blurX: 5, blurY: 5),
-            SafeArea(
-                child: ConstrainedBox(
+      backgroundColor: UIColors.bgColorScreen,
+      // drawer: NowDrawer(currentPage: "Articles"),
+      body: Stack(
+        children: [
+          VideoWidget().asGlass(
+            frosted: true,
+            blurX: 50.0,
+            blurY: 50.0,
+          ),
+          Container(
+            color: Color.fromARGB(50, 0, 0, 0),
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+          ).asGlass(tintColor: Colors.black, blurX: 5, blurY: 5),
+          SafeArea(
+            child: ConstrainedBox(
               constraints: BoxConstraints(
                 maxHeight: MediaQuery.of(context).size.height,
                 maxWidth: MediaQuery.of(context).size.width,
@@ -136,24 +136,22 @@ class ServiceWidget extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 2.h, bottom: 2.h),
+                    padding: EdgeInsets.only(top: 3.h, bottom: 2.h),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Padding(
-                            padding: EdgeInsets.only(left: 18),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.pop(context);
-                              },
-                              child: Icon(
-                                FontAwesomeIcons.arrowLeft,
-                                color: primaryColor,
-                              ),
-                            )),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushReplacementNamed(context, '/home');
+                          },
+                          child: Icon(
+                            FontAwesomeIcons.arrowLeft,
+                            color: primaryColor,
+                          ),
+                        ),
                         Image.asset(
                           'assets/imgs/logo.png',
-                          width: 25.w,
+                          width: 20.w,
                         ),
                         SizedBox(
                           width: 15.w,
@@ -207,7 +205,7 @@ class ServiceWidget extends StatelessWidget {
                                     BorderRadius.all(Radius.circular(20.sp))),
                           ),
                           onTap: () {
-                            Navigator.pop(context);
+                            Navigator.maybePop(context);
                           },
                         )
                       ],
@@ -215,8 +213,10 @@ class ServiceWidget extends StatelessWidget {
                   )
                 ],
               ),
-            )),
-          ],
-        ));
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

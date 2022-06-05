@@ -275,14 +275,10 @@ class _IntroState extends State<Intro> {
                         style: TextStyle(color: Colors.white, fontSize: 25),
                       ),
                     ),
-                    Text(
-                      '2 Saniye sonra yönlendirileceksiniz!',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
                     ElevatedButton(
                         onPressed: (() =>
                             Navigator.pushNamed(context, '/home')),
-                        child: Text("Yönlendir / Elimden Gelen Bu"))
+                        child: Text("Yönlendir"))
                   ],
                 ),
               if (state is LoginError)

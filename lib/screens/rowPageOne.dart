@@ -101,11 +101,9 @@ class PhotographyScreen extends StatelessWidget {
               height: 1.h,
             ),
             Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-              'Eget nunc, eu quis nunc non potenti nulla ultricies. '
-              'At sed tincidunt nullam sed massa consectetur arcu libero.',
+              'Herhangi bir kaza veya yaşamı tehlikeye düşüren bir durumda, sağlık görevlilerinin yardımı sağlanıncaya kadar, tıbbi araç gereç aranmaksızın, mevcut araç ve gereçlerle yapılan ilaçsız uygulamalardır.',
               style: GoogleFonts.roboto(
-                fontSize: 12.sp,
+                fontSize: 10.sp,
                 color: Colors.white,
               ),
             ),
