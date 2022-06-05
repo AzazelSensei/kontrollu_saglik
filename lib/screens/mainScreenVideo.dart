@@ -149,7 +149,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                             width: MediaQuery.of(context).size.width / 2.8,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/imgs/PhotoBack.jpg"),
+                                image: AssetImage("assets/imgs/ilkyardim.png"),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -220,7 +220,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                             decoration: BoxDecoration(
                               color: Colors.black,
                               image: DecorationImage(
-                                image: AssetImage("assets/imgs/Video.png"),
+                                image: AssetImage("assets/imgs/stock.png"),
                                 fit: BoxFit.cover,
                               ),
                               boxShadow: [
@@ -316,7 +316,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/Web.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -396,8 +396,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/imgs/marketing.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -408,7 +407,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                     Padding(
                                       padding: EdgeInsets.only(top: 12),
                                       child: Text(
-                                        'Marketing',
+                                        'Diyabet',
                                         style: GoogleFonts.roboto(
                                           fontWeight: FontWeight.w800,
                                           fontSize: 15,
@@ -482,8 +481,7 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/imgs/Software.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -591,13 +589,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/imgs/ClientPortal.png"),
+                      image: AssetImage("assets/imgs/stock.png"),
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ),
-              onTap: () {Navigator.pushNamed(context, "/apitest");},
+              onTap: () {
+                Navigator.pushNamed(context, "/apitest");
+              },
             )
           ],
         ),
@@ -628,15 +628,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.menu),
-                        iconSize: 3.4.h,
-                      ),
-                      Divider(
-                        height: 3.h,
+                      Expanded(
+                        flex: 1,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.menu),
+                          iconSize: 3.4.h,
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 4.h, bottom: 3.h),
@@ -645,15 +645,15 @@ class _MainVideoScreenState extends State<MainVideoScreen> {
                           width: 15.w,
                         ),
                       ),
-                      Divider(
-                        height: 3.h,
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, "/settings");
-                        },
-                        icon: Icon(Icons.settings),
-                        iconSize: 3.4.h,
+                      Expanded(
+                        flex: 1,
+                        child: IconButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, "/settings");
+                          },
+                          icon: Icon(Icons.settings),
+                          iconSize: 3.4.h,
+                        ),
                       ),
                     ],
                   ),

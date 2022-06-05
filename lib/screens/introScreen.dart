@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kontrollu_saglik/bloc/login_cubit/login_cubit.dart';
 
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -13,243 +15,351 @@ class Intro extends StatefulWidget {
 }
 
 class _IntroState extends State<Intro> {
+  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller2 = TextEditingController();
   @override
   Widget build(BuildContext context) {
     bool _visible = true;
 
-    return Scaffold(
-      body: SlidingUpPanel(
-        body: Stack(
-          children: [
-            RiveAnimation.asset(
-              'assets/imgs/3d_raster_test.riv',
-              fit: BoxFit.cover,
-            ),
-            Center(
-              child: Padding(
-                padding: EdgeInsets.only(bottom: 310),
-                child: AnimatedTextKit(
-                  animatedTexts: [
-                    TypewriterAnimatedText(
-                      'Sağlığınız İçin Aradığınız',
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 32.0,
-                        fontWeight: FontWeight.bold,
-                        // shadows: <Shadow> [
-                        //   Shadow(
-                        //     offset: Offset(3.0, 1.0),
-                        //     blurRadius: 5.0,
-                        //     color: Color.fromARGB(127, 0, 0, 0),
-                        //   ),
-                        // ],
-                      ),
-                      speed: const Duration(milliseconds: 75),
-                    ),
-                    TypewriterAnimatedText(
-                      'Her Şey Bu Uygulamada',
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 32.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      speed: const Duration(milliseconds: 100),
-                    ),
-                    TypewriterAnimatedText(
-                      'Kontrollü Sağlık',
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 32.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      speed: const Duration(milliseconds: 100),
-                    ),
-                  ],
-                  totalRepeatCount: 1,
-                ),
+    return BlocProvider(
+      create: (context) => LoginCubit(),
+      child: Scaffold(
+        body: SlidingUpPanel(
+          body: Stack(
+            children: [
+              RiveAnimation.asset(
+                'assets/imgs/3d_raster_test.riv',
+                fit: BoxFit.cover,
               ),
-            )
-          ],
-        ),
-        maxHeight: 700.0,
-        minHeight: 50.0,
-        panel: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            //Pull up tab
-            AnimatedOpacity(
-              opacity: _visible ? 1.0 : 0.0,
-              duration: Duration(milliseconds: 500),
-              child: Padding(
+              Center(
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 310),
+                  child: AnimatedText(),
+                ),
+              )
+            ],
+          ),
+          maxHeight: 700.0,
+          minHeight: 70.0,
+          panel: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              //Pull up tab
+              AnimatedOpacity(
+                opacity: _visible ? 1.0 : 0.0,
+                duration: Duration(milliseconds: 500),
+                child: Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
                   child: Center(
-                      child: Container(
-                    color: Colors.white.withAlpha(200),
-                    width: 170.0,
-                    height: 5.0,
-                  ))),
-            ),
-
-            //Panel code
-            Container(
-                height: 675,
-                //panel Background
-                decoration: BoxDecoration(
-                  color: Colors.black.withAlpha(235),
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(40.0),
-                      topLeft: Radius.circular(40.0)),
-                ),
-
-                //Main Layout Column
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    //Login In Forum
-                    Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 25,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withAlpha(200),
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: 50,
-                          ),
+                      width: 170.0,
+                      height: 12.0,
+                    ),
+                  ),
+                ),
+              ),
 
-                          Text(
-                            "Giriş Yap",
-                            style: TextStyle(color: Colors.white, fontSize: 30),
-                          ),
+              //Panel code
+              Container(
+                  height: 675,
+                  //panel Background
+                  decoration: BoxDecoration(
+                    color: Colors.black.withAlpha(235),
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(40.0),
+                        topLeft: Radius.circular(40.0)),
+                  ),
 
-                          SizedBox(
-                            height: 5,
-                          ),
-
-                          Text(
-                            "Mail Adresiniz ile Giriş Yapın",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w300,
-                              fontSize: 17,
+                  //Main Layout Column
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      //Login In Forum
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 30,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: 50,
                             ),
-                          ),
 
-                          SizedBox(
-                            height: 40,
-                          ),
+                            Text(
+                              "Giriş Yap",
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 30),
+                            ),
 
-                          //Email field Section
-                          Text(
-                            "Mail Adresi",
-                            style: TextStyle(
+                            SizedBox(
+                              height: 5,
+                            ),
+
+                            Text(
+                              "Kullanıcı Adı veya Mail Adresiniz ile Giriş yapabilirsiniz. - admin/123456",
+                              style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 19,
-                                fontWeight: FontWeight.bold),
-                            textAlign: TextAlign.left,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextField(
-                            style: TextStyle(
-                              color: Colors.white,
+                                fontWeight: FontWeight.w300,
+                                fontSize: 17,
+                              ),
                             ),
-                            decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color.fromARGB(255, 30, 26, 26),
-                                hintText: " "),
-                          ),
 
-                          SizedBox(
-                            height: 50,
-                          ),
-
-                          //Password field Section
-                          Text(
-                            "Şifre",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 19,
-                                fontWeight: FontWeight.bold),
-                            textAlign: TextAlign.left,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextField(
-                            obscureText: true,
-                            style: TextStyle(
-                              color: Colors.white,
+                            SizedBox(
+                              height: 40,
                             ),
-                            decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color.fromARGB(255, 30, 26, 26),
-                                hintText: ""),
-                          ),
-                          Divider(
-                            height: 15,
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Şifremi Unuttum?",
+
+                            //field
+                            Text(
+                              "Kullanıcı Adı",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.left,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            TextField(
+                              controller: _controller,
                               style: TextStyle(
                                 color: Colors.white,
                               ),
+                              decoration: InputDecoration(
+                                  filled: true,
+                                  fillColor: Color.fromARGB(255, 30, 26, 26),
+                                  hintText: " "),
+                            ),
+
+                            SizedBox(
+                              height: 50,
+                            ),
+
+                            //Password
+                            Text(
+                              "Şifre",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold),
                               textAlign: TextAlign.left,
                             ),
-                          ),
-                        ],
+                            SizedBox(
+                              height: 10,
+                            ),
+                            TextField(
+                              controller: _controller2,
+                              obscureText: true,
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                              decoration: InputDecoration(
+                                  filled: true,
+                                  fillColor: Color.fromARGB(255, 30, 26, 26),
+                                  hintText: ""),
+                            ),
+                            Divider(
+                              height: 15,
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "Şifremi Unuttum?",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: buildColumn(),
+                      ),
+
+                      //Login Button
+                      // Column(
+                      //   children: [
+                      //     TextButton(
+                      //       onPressed: () {},
+                      //       child: Text(
+                      //         "Hesabım Yok. Hesap Oluştur!",
+                      //         style: TextStyle(
+                      //             color: Color.fromRGBO(255, 255, 255, .5)),
+                      //         textAlign: TextAlign.left,
+                      //       ),
+                      //     ),
+                      //     GFButton(
+                      //       onPressed: () {
+                      //         context.read<LoginCubit>().login(
+                      //             username: _controller.text,
+                      //             password: _controller2.text);
+                      //       },
+                      //       text: "Giriş Yap",
+                      //       textStyle: TextStyle(
+                      //           color: Color.fromRGBO(240, 255, 255, 100),
+                      //           fontSize: 22,
+                      //           letterSpacing: 2,
+                      //           fontWeight: FontWeight.bold),
+                      //       size: 65,
+                      //       fullWidthButton: true,
+                      //       color: Color.fromRGBO(255, 124, 23, 1),
+                      //       // padding: EdgeInsets.symmetric(vertical: 10),
+                      //     ),
+                      //     buildColumn(),
+                      //   ],
+                      // )
+                    ],
+                  )),
+            ],
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha(70),
+              blurRadius: 40,
+            ),
+          ],
+          color: Colors.green.withAlpha(0),
+          onPanelClosed: () {
+            setState(() {
+              _visible = false;
+            });
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget loginButton(BuildContext context) {
+    return GFButton(
+        onPressed: () {
+          context
+              .read<LoginCubit>()
+              .login(username: _controller.text, password: _controller2.text);
+        },
+        text: "Giriş Yap",
+        textStyle: TextStyle(
+            color: Color.fromRGBO(240, 255, 255, 100),
+            fontSize: 22,
+            letterSpacing: 2,
+            fontWeight: FontWeight.bold),
+        size: 65,
+        fullWidthButton: true,
+        color: Color.fromRGBO(255, 124, 23, 1));
+  }
+
+  Widget buildColumn() {
+    return BlocBuilder<LoginCubit, LoginState>(
+      builder: (context, state) {
+        if (state is LoginLoading) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        } else {
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              if (state is LoginLoaded)
+                Column(
+                  children: [
+                    Center(
+                      child: Text(
+                        'Kullanıcı: ${state.user.name} ${state.user.surName}',
+                        style: TextStyle(color: Colors.white, fontSize: 25),
                       ),
                     ),
-
-                    //Login Button
-                    Column(
-                      children: [
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "Hesabım Yok. Hesap Oluştur!",
-                            style: TextStyle(
-                                color: Color.fromRGBO(255, 255, 255, .5)),
-                            textAlign: TextAlign.left,
-                          ),
-                        ),
-                        GFButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/home");
-                          },
-                          text: "Giriş Yap",
-                          textStyle: TextStyle(
-                              color: Color.fromRGBO(240, 255, 255, 100),
-                              fontSize: 22,
-                              letterSpacing: 2,
-                              fontWeight: FontWeight.bold),
-                          size: 65,
-                          fullWidthButton: true,
-                          color: Color.fromRGBO(255, 124, 23, 1),
-                          // padding: EdgeInsets.symmetric(vertical: 10),
-                        ),
-                      ],
-                    )
+                    Text(
+                      '2 Saniye sonra yönlendirileceksiniz!',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    ElevatedButton(
+                        onPressed: (() =>
+                            Navigator.pushNamed(context, '/home')),
+                        child: Text("Yönlendir / Elimden Gelen Bu"))
                   ],
-                )),
-          ],
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withAlpha(70),
-            blurRadius: 40,
+                ),
+              if (state is LoginError)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                  child: Center(
+                      child: Text(
+                    'error: ${state.errorMessage}',
+                    style: TextStyle(color: Colors.red, fontSize: 30),
+                  )),
+                ),
+              SizedBox(
+                height: 20,
+                width: 20,
+              ),
+              // TextField(
+              //   controller: _controller,
+              //   decoration: const InputDecoration(hintText: 'username'),
+              // ),
+              // TextField(
+              //   controller: _controller2,
+              //   decoration: const InputDecoration(hintText: 'password'),
+              // ),
+              loginButton(context),
+            ],
+          );
+        }
+      },
+    );
+  }
+}
+
+class AnimatedText extends StatelessWidget {
+  const AnimatedText({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedTextKit(
+      animatedTexts: [
+        TypewriterAnimatedText(
+          'Sağlığınız İçin Aradığınız',
+          textStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 32.0,
+            fontWeight: FontWeight.bold,
+            // shadows: <Shadow> [
+            //   Shadow(
+            //     offset: Offset(3.0, 1.0),
+            //     blurRadius: 5.0,
+            //     color: Color.fromARGB(127, 0, 0, 0),
+            //   ),
+            // ],
           ),
-        ],
-        color: Colors.green.withAlpha(0),
-        onPanelClosed: () {
-          setState(() {
-            _visible = false;
-          });
-        },
-      ),
+          speed: const Duration(milliseconds: 75),
+        ),
+        TypewriterAnimatedText(
+          'Her Şey Bu Uygulamada',
+          textStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 32.0,
+            fontWeight: FontWeight.bold,
+          ),
+          speed: const Duration(milliseconds: 100),
+        ),
+        TypewriterAnimatedText(
+          'Kontrollü Sağlık',
+          textStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 32.0,
+            fontWeight: FontWeight.bold,
+          ),
+          speed: const Duration(milliseconds: 100),
+        ),
+      ],
+      totalRepeatCount: 1,
     );
   }
 }

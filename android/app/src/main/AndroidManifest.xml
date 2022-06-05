@@ -2,9 +2,9 @@
     package="com.example.kontrollu_saglik">
    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="kontrollu_saglik"
+        android:label="Kontrollü Sağlık"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/icon">
       
         <activity
             android:name=".MainActivity"

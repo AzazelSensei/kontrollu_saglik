@@ -27,7 +27,7 @@ class UIColors {
 
   static const Color text = Color.fromRGBO(44, 44, 44, 1.0);
 
-  static const Color bgColorScreen = Color.fromRGBO(0, 0, 0, 1.0);
+  static const Color bgColorScreen = Color.fromARGB(255, 255, 255, 255);
 
   static const Color border = Color.fromRGBO(231, 231, 231, 1.0);
 

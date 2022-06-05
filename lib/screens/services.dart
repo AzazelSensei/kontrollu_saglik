@@ -61,7 +61,7 @@ class _ServicesState extends State<Services> {
 
   final List<Service> serviceList = [
     Service(
-        name: "Web Design",
+        name: "Web Desi",
         description: "Hello Free world",
         url:
             "https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?cs=srgb&dl=pexels-pixabay-163097.jpg&fm=jpg"),
@@ -76,7 +76,7 @@ class _ServicesState extends State<Services> {
         url:
             "https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?cs=srgb&dl=pexels-kaique-rocha-598917.jpg&fm=jpg"),
     Service(
-        name: "Videography",
+        name: "pagwe2",
         description: "Hello Free world",
         url:
             "https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg?cs=srgb&dl=pexels-md-iftekhar-uddin-emon-403495.jpg&fm=jpg"),

@@ -1,11 +1,6 @@
-import 'dart:async';
-import 'dart:convert';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kontrollu_saglik/blocks/login_cubit/login_cubit.dart';
-import 'package:kontrollu_saglik/model/user_model.dart';
+import 'package:kontrollu_saglik/bloc/login_cubit/login_cubit.dart';
 
 void main() {
   runApp(const ApiTest());

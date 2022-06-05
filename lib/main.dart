@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kontrollu_saglik/screens/ServicePage.dart';
+import 'package:kontrollu_saglik/screens/rowPageThree.dart';
 import 'package:kontrollu_saglik/screens/articles.dart';
 import 'package:kontrollu_saglik/screens/getStarted.dart';
 import 'package:kontrollu_saglik/screens/inquriry.dart';
@@ -7,13 +7,13 @@ import 'package:kontrollu_saglik/screens/introScreen.dart';
 import 'package:kontrollu_saglik/screens/mainScreen.dart';
 import 'package:kontrollu_saglik/screens/mainScreenVideo.dart';
 import 'package:kontrollu_saglik/screens/newscreen.dart';
-import 'package:kontrollu_saglik/screens/photographyServices.dart';
+import 'package:kontrollu_saglik/screens/rowPageOne.dart';
 import 'package:kontrollu_saglik/screens/pro.dart';
 import 'package:kontrollu_saglik/screens/profile.dart';
 import 'package:kontrollu_saglik/screens/register.dart';
 import 'package:kontrollu_saglik/screens/services.dart';
 import 'package:kontrollu_saglik/screens/settings.dart';
-import 'package:kontrollu_saglik/screens/videographyServices.dart';
+import 'package:kontrollu_saglik/screens/rowPageTwo.dart';
 import 'package:sizer/sizer.dart';
 
 import 'screens/components.dart';
@@ -46,20 +46,18 @@ class MyApp extends StatelessWidget {
           "/photos": (BuildContext context) => new PhotographyScreen(),
           "/videos": (BuildContext context) => new VideoraphyScreen(),
           "/web": (BuildContext context) => new ServiceWidget(
-                serviceName: "Web Design Services",
+                serviceName: "Diyabet ile Yaşam",
                 serviceBody:
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
                     'Eget nunc, eu quis nunc non potenti nulla ultricies. '
                     'At sed tincidunt nullam sed massa consectetur arcu libero.',
-                imageReference: "assets/imgs/Web.png",
+                imageReference: "assets/imgs/diyabet.png",
               ),
           "/market": (BuildContext context) => new ServiceWidget(
-                serviceName: "Marketing Servcies",
+                serviceName: "Diyabet Nedir?",
                 serviceBody:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                    'Eget nunc, eu quis nunc non potenti nulla ultricies. '
-                    'At sed tincidunt nullam sed massa consectetur arcu libero.',
-                imageReference: "assets/imgs/marketing.png",
+                    'Diyabet, kandaki şeker düzeyini dengeleyen insülin hormonunun; eksikliği ve/veya yeterince salgılanmasına rağmen, vücutta kullanılamaması sonucu oluşan kronik metabolizma bozukluğudur. ',
+                imageReference: "assets/imgs/diyabet.png",
               ),
           "/software": (BuildContext context) => new ServiceWidget(
                 serviceName: "Software Development",
@@ -67,7 +65,7 @@ class MyApp extends StatelessWidget {
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
                     'Eget nunc, eu quis nunc non potenti nulla ultricies. '
                     'At sed tincidunt nullam sed massa consectetur arcu libero.',
-                imageReference: "assets/imgs/Software.png",
+                imageReference: "assets/imgs/diyabet.png",
               ),
         },
       );

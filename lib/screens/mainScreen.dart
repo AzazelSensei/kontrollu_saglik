@@ -151,7 +151,7 @@ class MainScreen extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image:
-                                        AssetImage("assets/imgs/PhotoBack.jpg"),
+                                        AssetImage("assets/imgs/ilkyardim.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -229,7 +229,7 @@ class MainScreen extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/Video.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -321,7 +321,7 @@ class MainScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/imgs/Web.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -408,8 +408,7 @@ class MainScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width / 3,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/imgs/marketing.png"),
+                                    image: AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -503,7 +502,7 @@ class MainScreen extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image:
-                                        AssetImage("assets/imgs/Software.png"),
+                                        AssetImage("assets/imgs/stock.png"),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -680,7 +679,7 @@ class MainScreen extends StatelessWidget {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/imgs/Chat.png"),
+                      image: AssetImage("assets/imgs/stock.png"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -773,7 +772,7 @@ class MainScreen extends StatelessWidget {
       //           width: MediaQuery.of(context).size.width,
       //           decoration: BoxDecoration(
       //             image: DecorationImage(
-      //               image: AssetImage("assets/imgs/Chat.png"),
+      //               image: AssetImage("assets/imgs/stock.png"),
       //               fit: BoxFit.cover,
       //             ),
       //           ),
@@ -798,7 +797,7 @@ class MainScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/imgs/background.jpg"),
+            image: AssetImage("assets/imgs/Fbg.png"),
             fit: BoxFit.cover,
           ),
         ),

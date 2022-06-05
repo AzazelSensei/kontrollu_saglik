@@ -74,7 +74,7 @@ class Inquiry extends StatelessWidget {
             ],
           ),
           // color: Colors.orange,
-          image: const AssetImage("assets/imgs/album-1.jpg"),
+          image: const AssetImage("assets/imgs/stock.png"),
           boxFit: BoxFit.cover,
           colorFilter:
               ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -86,7 +86,7 @@ class Inquiry extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/imgs/album-2.jpg'),
+              image: AssetImage('assets/imgs/stock.png'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -97,7 +97,7 @@ class Inquiry extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/imgs/album-3.jpg'),
+              image: AssetImage('assets/imgs/stock.png'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -108,7 +108,7 @@ class Inquiry extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/imgs/album-4.jpg'),
+              image: AssetImage('assets/imgs/stock.png'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),

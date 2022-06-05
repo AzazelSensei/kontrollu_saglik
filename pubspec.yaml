@@ -13,8 +13,10 @@ dependencies:
   carousel_slider: ^2.2.1
   cupertino_icons: ^1.0.0
   dio: ^4.0.6
+
   flutter:
     sdk: flutter
+
   flutter_bloc: ^8.0.1
   flutter_form_builder: ^7.1.1
   font_awesome_flutter: ^8.8.1
@@ -31,6 +33,12 @@ dependencies:
   sliding_up_panel: ^2.0.0+1
   url_launcher: ^5.5.2
   video_player: ^2.2.19
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
 
 dev_dependencies:
   flutter_test:
@@ -41,23 +49,7 @@ flutter:
 
   assets:
     - assets/imgs/
-  #    - assets/imgs/onboarding-bg.png
-  #    - assets/imgs/android.png
-  #    - assets/imgs/ios.png
-  #    - assets/imgs/creative-tim.png
-  #    - assets/imgs/now-logo.png
-  #    - assets/imgs/register-bg.png
-  #    - assets/imgs/bg-profile.png
-  #    - assets/imgs/profile-img.jpg
-  #    - assets/imgs/album-1.jpg
-  #    - assets/imgs/album-2.jpg
-  #    - assets/imgs/album-3.jpg
-  #    - assets/imgs/album-4.jpg
-  #    - assets/imgs/album-5.jpg
-  #    - assets/imgs/album-6.jpg
-  #    - assets/imgs/onboarding-free.png
-  #    - assets/imgs/invision-white-slim.png
-  #    - assets/imgs
+
   fonts:
     - family: Montserrat
       fonts:
