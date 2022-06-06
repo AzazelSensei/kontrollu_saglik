@@ -146,7 +146,7 @@ Alınan kararlar: Kodlama yapılırken ürünün başına dönüp ara verilmesi 
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken kırmızı başlıklar yapılacak işleri (task) gösterirken, mavi başlıklar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats]
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/daily-scrum-3.docx)
 
 
 - **Sprint board update**: Sprint board screenshotları: 
