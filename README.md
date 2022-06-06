@@ -150,9 +150,9 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken k
 
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1]
-![Backlog 2]
-![Backlog 3]
+![Backlog 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-trello-1.png)
+![Backlog 2](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-trello-2.png)
+![Backlog 3](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-trello-3.png)
 
 - **Ürün Durumu**: Ekran görüntüleri: <br>
 ![Screenshot 1 ]
