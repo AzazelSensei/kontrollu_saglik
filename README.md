@@ -155,16 +155,22 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken k
 ![Backlog 3](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-trello-3.png)
 
 - **Ürün Durumu**: Ekran görüntüleri: <br>
-![Screenshot 1 ]
-![Screenshot 2 ]
-![Screenshot 3 ]
-![Screenshot 4 ]
-![Screenshot 5 ]
-![Screenshot 6 ]
-![Screenshot 7 ]
-![Screenshot 8 ]
-![Screenshot 9 ]
-![Screenshot 10 ]
+![Screenshot 1 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-1.jpg)
+![Screenshot 2 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-2.jpg)
+![Screenshot 3 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-3.jpg)
+![Screenshot 4 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-4.jpg)
+![Screenshot 5 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-5.jpg)
+![Screenshot 6 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-6.jpg)
+![Screenshot 7 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-7.jpg)
+![Screenshot 8 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-8.jpg)
+![Screenshot 9 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-9.jpg)
+![Screenshot 10 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-10.jpg)
+![Screenshot 11 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-11.jpg)
+![Screenshot 12 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-12.jpg)
+![Screenshot 13 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-13.jpg)
+![Screenshot 14 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-14.jpg)
+![Screenshot 15 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-15.jpg)
+![Screenshot 16 ](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/3.sprint-ss-16.jpg)
 
 - **Sprint Review**: 
 Alınan kararlar: Son sprintte kodlamaya odaklanılmıştır. Mimari oluşturulmuş, kullanıcı arayüzü ve deneyimi geliştirilmiş, sayfa yapıları oluşturulmuş, api ve bloc ile kullanıcı girişi yapılmıştır. Diğer yandan toplanan içerikler düzenlenmiş ve dosyalanmıştır.
