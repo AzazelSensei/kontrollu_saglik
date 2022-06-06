@@ -4,13 +4,12 @@ Takım Cuddly (4. numara)
 
 ![logo 1](https://github.com/AzazelSensei/kontrollu_saglik/blob/master/ProjectManagement/SprintDocuments/cuddly.jpg)
 
-
 # Ürün İle İlgili Bilgiler
 
 ## Takım Elemanları
 
-- Emine Temelli: Product Owner
 - Ezgi Nur Bilici: Scrum Master
+- Emine Temelli: Product Owner
 - Berkay Çatak: Team Member/Developer
 - Asil Ata Karakoç: Team Member/Developer
 - Abdullah Gökmen: Team Member/Developer
@@ -33,7 +32,6 @@ Takım Cuddly (4. numara)
 - Bebekler, çocuklar, yetişkinler, ilk-yardım ve genel için ayrı kategorilerin bulunması
 - Bu kategorilerin altında her kesim için  ilgili sağlık temalarının olması
 - Örn: Genel Kategori; Tema: Poliklinik randevuları için hangi rahatsızlıklara dikkat etmek gerekli; Bu tema için bilinçlendiren yazılarla ve verilen örneklerle farkındalık yaratılır.
-- Ödüllü soru-cevap oyunları
 
 
 ## Hedef Kitle
@@ -42,7 +40,6 @@ Takım Cuddly (4. numara)
 - 10-50 yaş arası kullanıcılar
 - Akıllı telefon kullananlar
 - Ebeveynler
-- Yeni doğan bebekleri olan anneler ve anne adayları
 
 
 ## Product Backlog URL
@@ -138,4 +135,43 @@ Alınan kararlar: Kodlama yapılırken ürünün başına dönüp ara verilmesi 
 
 # Sprint 3
 
----
+- **Sprint Notları**: Kodlama yapılmış, uygulama tamamlanmıştır.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 32 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 96 puanlık backlog bulunmaktadır. 96 puan tamamlanmıştır.
+
+- **Backlog düzeni ve Story seçimleri**: Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
+
+Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello'da gözüken kırmızı başlıklar yapılacak işleri (task) gösterirken, mavi başlıklar story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsap üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats]
+
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1]
+![Backlog 2]
+![Backlog 3]
+
+- **Ürün Durumu**: Ekran görüntüleri: <br>
+![Screenshot 1 ]
+![Screenshot 2 ]
+![Screenshot 3 ]
+![Screenshot 4 ]
+![Screenshot 5 ]
+![Screenshot 6 ]
+![Screenshot 7 ]
+![Screenshot 8 ]
+![Screenshot 9 ]
+![Screenshot 10 ]
+
+- **Sprint Review**: 
+Alınan kararlar: Son sprintte kodlamaya odaklanılmıştır. Mimari oluşturulmuş, kullanıcı arayüzü ve deneyimi geliştirilmiş, sayfa yapıları oluşturulmuş, api ve bloc ile kullanıcı girişi yapılmıştır. Diğer yandan toplanan içerikler düzenlenmiş ve dosyalanmıştır.
+
+- **Sprint Retrospective:**
+  - Tahmin puanları gözden geçirildi ve tam puana ulaşıldı
+  - Kodlama yapıldı
+  - Toplanan kaynaklar gözden geçirildi
+  
+-**Diğer Notlar**:
+- Uygulama tamamlanmıştır.
